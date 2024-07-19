@@ -2,7 +2,9 @@
     --bodybg-color: #d6d3da;
     --bg-color: #e6e3e8;
     --input-bg-color: #dbdadc;
-    --red-color: #ff3f0f;
+    /* --red-color: #ff3f0f; */
+    --red-color: #092936;
+    /* --red-color: #11516a; */
 }
 
 * {
@@ -28,7 +30,7 @@ body {
     background-color: var(--bg-color);
     overflow-x: auto;
     border-radius: 5px;
-    box-shadow: 2px 2px 15px rgb(0, 0, 0.5);
+    box-shadow: 2px 2px 15px var(--red-color);
     position: relative;
     overflow: hidden;
     animation: popup 2s forwards cubic-bezier(0.25, 1, 0.25, 1);
@@ -45,6 +47,13 @@ body {
     100%{
         transform: scale(1) rotateY(0deg);
     }
+}
+.container h2{
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+.signin-form,.signup-form{
+    color: var(--red-color);
 }
 .signup-form,
 .signin-page {
@@ -93,7 +102,8 @@ body {
 }
 
 .signin-form a {
-    text-decoration: none;
+    padding-top: 4px;
+    color: var(--red-color);
 }
 
 .signin-form {
@@ -174,16 +184,14 @@ input {
     border: none;
     padding-left: 10px;
     border-radius: 5px;
+    color: var(--red-color);
+    font-weight: bolder;
+    letter-spacing: 1.5px;
 }
 
 input:focus {
     outline: none;
 }
-
-
-
-
-
 
 .card {
     width: 263px;
